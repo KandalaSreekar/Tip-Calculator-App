@@ -27,6 +27,24 @@ body {
     font-size: 2rem;
     font-weight: 700;
 }
+.input {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: hsl(189, 41%, 97%);
+}
+.input input{
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-family: 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+input:focus{ 
+    border: none;
+    outline-style: none;
+    box-shadow: none;
+  }
 .calc-container {
     margin-top: 2%;
     padding: 1rem;
@@ -41,7 +59,7 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     color: darkslategrey;
     max-width: 20rem;
 }
@@ -86,7 +104,9 @@ body {
 .reset-button a{
     background-color: hsl(172, 67%, 45%);
     text-decoration: none;
-    color: var(--White);
+    color: var(--Very-dark-cyan);
+    font-weight: 800;
+    border-radius: 5px;
     padding: 0.5rem 7rem;
 }
 .words {
@@ -101,48 +121,24 @@ body {
 .numbers h1 {
     color: hsl(172, 67%, 45%);
 }
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.tip-percent {
+    display: none;
+    width: fit-content;
+}
 
-.donate-now {
-    list-style-type: none;
-    margin: 25px 0 0 0;
-    padding: 0;
-  }
-  
-  .donate-now li {
-    float: left;
-    margin: 0 5px 0 0;
-    width: 100px;
-    height: 40px;
-    position: relative;
-  }
-  
-  .donate-now label,
-  .donate-now input {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .donate-now input[type="radio"] {
-    opacity: 0.01;
-    z-index: 100;
-  }
-  
-  .donate-now input[type="radio"]:checked+label,
-  .Checked+label {
-    background: yellow;
-  }
-  
-  .donate-now label {
-    padding: 5px;
-    border: 1px solid #CCC;
-    cursor: pointer;
-    z-index: 90;
-  }
-  
-  .donate-now label:hover {
-    background: #DDD;
-  }
+.tip{
+    text-align: center;
+    width: 2rem;
+}
+.tip:hover{
+    cursor:pointer;
+}
+.tip-percent:checked + .tip {
+    box-shadow: 0 0 1px 1px #2ecc71;
+    background-color: royalblue;
+    color:white;
+}

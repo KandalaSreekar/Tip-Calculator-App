@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Document</title>
 </head>
 <body>
-    <ul class="donate-now">
-        <li>
-          <input type="radio" id="a25" name="amount" />
-          <label for="a25">$25</label>
-        </li>
-        <li>
-          <input type="radio" id="a50" name="amount" />
-          <label for="a50">$50</label>
-        </li>
-        <li>
-          <input type="radio" id="a75" name="amount" checked="checked" />
-          <label for="a75">$75</label>
-        </li>
-        <li>
-          <input type="radio" id="a100" name="amount" />
-          <label for="a100">$100</label>
-        </li>
-        <li>
-          <input type="radio" id="other" name="amount" />
-          <label for="other">other:</label>
-        </li>
-        <li>
-          <input type="text" id="otherAmount" name="numAmount" />
-        </li>
-      </ul>
+  <div class="container">
+  
+    <h1>Radio Buttons as Cards, Select one!</h1>
+    
+    <div class="row">
+          <label>
+            <input type="radio" name="product" class="card-input-element" />
+  
+              <div class="card-input">
+                10%
+              </div>
+  
+          </label>
+
+          <label>
+            <input type="radio" name="product" class="card-input-element" />
+  
+              <div class="card-input">
+                15%
+              </div>
+          </label>
+          <label>
+            <input type="radio" name="product" class="card-input-element" />
+  
+              <div class="card-input">
+                50%
+              </div>
+          </label>
+          
+    </div>
+    
+  </div>
 </body>
 </html>
