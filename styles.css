@@ -1,0 +1,148 @@
+:root {
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(189, 41%, 84%);
+}
+.main-container {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    font-family: "Space Mono", monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.calc-container {
+    margin-top: 2%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: darkslategrey;
+    max-width: 20rem;
+}
+.bill-section {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0rem 1rem;
+}
+.tip-section {
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 1rem;
+}
+.no-of-people {
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 1rem;
+}
+.right {
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+    max-width: 20rem;
+}
+
+.outputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.tip-amount, .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset-button a{
+    background-color: hsl(172, 67%, 45%);
+    text-decoration: none;
+    color: var(--White);
+    padding: 0.5rem 7rem;
+}
+.words {
+    margin-top: 2%;
+}
+.words h5 {
+    color: var(--White);
+}
+.words h6 {
+    color: var(--Dark-grayish-cyan);
+}
+.numbers h1 {
+    color: hsl(172, 67%, 45%);
+}
+
+.donate-now {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  
+  .donate-now li {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 100px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .donate-now label,
+  .donate-now input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .donate-now input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+  
+  .donate-now input[type="radio"]:checked+label,
+  .Checked+label {
+    background: yellow;
+  }
+  
+  .donate-now label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+  }
+  
+  .donate-now label:hover {
+    background: #DDD;
+  }

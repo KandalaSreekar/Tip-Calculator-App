@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">
+      SPLI <br> TTER
+    </div>
+    <div class="calc-container">
+      <div class="left">
+        <div class="bill-section">
+          Bill
+          <br>
+          <input type="text" id="bill" name="bill" maxlength="10" size="30" placeholder="Enter $ amount">
+        </div>
+        <div class="tip-section">
+          Select Tip %
+          <br>
+          <ul class="donate-now">
+            <li>
+              <input type="radio" id="a25" name="amount" />
+              <label for="a25">5%</label>
+            </li>
+            <li>
+              <input type="radio" id="a50" name="amount" />
+              <label for="a50">10%</label>
+            </li>
+            <li>
+              <input type="radio" id="a75" name="amount" checked="checked" />
+              <label for="a75">15%</label>
+            </li>
+            <li>
+              <input type="radio" id="a100" name="amount" />
+              <label for="a100">25%</label>
+            </li>
+            <li>
+              <input type="radio" id="a100" name="amount" />
+              <label for="a100">50%</label>
+            </li>
+            <li>
+              <input type="radio" id="other" name="amount" />
+              <label for="other">other:</label>
+            </li>
+            <li>
+              <input type="text" id="otherAmount" name="numAmount" />
+            </li>
+          </ul>
+        </div>
+        <div class="no-of-people">
+          Number of people
+          <br>
+          <input type="text" id="bill" name="bill" maxlength="10" size="30">
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="outputs">
+          <div class="tip-amount">
+            <div class="words">
+            <h1>
+              <h5>
+                Tip Amount
+              </h5>
+              <h6>
+                / person
+              </h6>
+            </div>
+            <div class="numbers">
+              <h1>
+                $0.00
+              </h1>
+            </div>
+            </h1>
+          </div>
+          <div class="total">
+            <div class="words">
+            <h5>
+              Amount
+            </h5>
+            <h6>
+              / person
+            </h6>
+            </div>
+            <div class="numbers">
+              <h1>
+                $0.00
+              </h1>
+            </div>
+            </h1>
+          </div>
+      </div>
+      <div class="reset-button">
+        <a href="#">Reset</a>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </div>
+<!-- 
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
