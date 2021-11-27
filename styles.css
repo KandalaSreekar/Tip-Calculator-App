@@ -68,11 +68,17 @@ input:focus{
     font-weight: 400;
     margin: 0rem 1rem;
 }
+.input:hover{
+    cursor:pointer;
+}
+.input:focus{
+    border: 2px solid var(--Very-dark-cyan);
+}
 .tip-section {
     font-family: "Space Mono", monospace;
     font-size: 1rem;
     font-weight: 400;
-    margin: 1rem 1rem;
+    margin: 0.2rem 1rem;
 }
 .no-of-people {
     font-family: "Space Mono", monospace;
@@ -129,16 +135,24 @@ input:focus{
     display: none;
     width: fit-content;
 }
-
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
 .tip{
     text-align: center;
-    width: 2rem;
+    width: 5rem;
+    padding:5px 2px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background-color: var(--Very-dark-cyan);
+    color: white;
 }
 .tip:hover{
     cursor:pointer;
 }
 .tip-percent:checked + .tip {
-    box-shadow: 0 0 1px 1px #2ecc71;
-    background-color: royalblue;
-    color:white;
+    background-color: hsl(172, 67%, 45%);
+    color: var(--Very-dark-cyan);
+    font-weight: 800;
 }
