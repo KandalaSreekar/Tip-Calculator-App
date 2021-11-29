@@ -1,3 +1,7 @@
+# Solution:- https://nervous-turing-5602d8.netlify.app
+
+
+
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
