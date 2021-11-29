@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
-  <title>Document</title>
-</head>
+<html>
 <body>
-  <div class="container">
-  
-    <h1>Radio Buttons as Cards, Select one!</h1>
-    
-    <div class="row">
-          <label>
-            <input type="radio" name="product" class="card-input-element" />
-  
-              <div class="card-input">
-                10%
-              </div>
-  
-          </label>
 
-          <label>
-            <input type="radio" name="product" class="card-input-element" />
+<p id="aag">Enter names in the fields, then click "Submit" to submit the form:</p>
 
-              <div class="card-input">
-                15%
-              </div>
-          </label>
-          <label>
-            <input type="radio" name="product" class="card-input-element" />
-  
-              <div class="card-input">
-                50%
-              </div>
-          </label>
-          
-    </div>
-    
-  </div>
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+
 </body>
 </html>

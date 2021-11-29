@@ -24,8 +24,9 @@ body {
 .header {
     font-family: "Space Mono", monospace;
     color: hsl(183, 100%, 15%);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: b;
+    font-weight: bolder;
 }
 .input {
     width: fit-content;
@@ -62,6 +63,7 @@ input:focus{
     justify-content: space-around;
     color: darkslategrey;
     max-width: 20rem;
+    font-weight: 1000;
 }
 .bill-section {
     font-size: 1rem;
